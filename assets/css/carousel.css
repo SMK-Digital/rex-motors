@@ -1,0 +1,157 @@
+/* Container principal do slider */
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    border-bottom: ridge 3px #00750a;
+}
+
+/* Slide esquerdo */
+.left-slide {
+    height: 100vh;
+    width: 25%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Divs internas do slide esquerdo */
+.left-slide > div {
+    background-color: #12441652;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+/* Títulos dentro do slide esquerdo */
+.left-slide h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    margin-top: -30px;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+.left-slide p {
+    font-size: 1.5rem;
+    font-family: 'Bahnscrift',Arial, Helvetica, sans-serif;
+    padding: 10px;
+    text-align: center;
+    background-color: #01470769;
+   
+
+}
+
+/* Slide direito */
+.right-slide {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    z-index: -1;
+    transition: transform 0.5s ease-in-out;
+}
+
+.right-slide > div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+}
+
+/* Botões de navegação */
+.action-buttons button i {
+    font-size: 25px;
+}
+
+.slider-container .action-buttons button {
+    position: absolute;
+    left: 25%;
+    top: 94%;
+    z-index: 100;
+}
+
+.slider-container .action-buttons .down-button {
+    transform: translateX(-100%);
+}
+
+.slider-container .action-buttons .up-button {
+    transform: translateY(-100%);
+}
+
+/* Estilos gerais dos botões */
+button {
+    background-color: transparent;
+    border: none;
+    color: #00750a;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 0;
+}
+
+button:hover {
+    color: #8af186;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Media Queries para responsividade */
+
+/* Dispositivos móveis (menor que 768px) */
+@media (max-width: 768px) {
+    .left-slide {
+        width: 100%;
+    }
+
+    .left-slide div{
+        background-color: transparent;
+    }
+
+    .left-slide h1 {
+        font-size: 2rem;
+    }
+    .slider-container .action-buttons button {
+        left: 90%; /* Ajusta a posição dos botões em telas pequenas */
+        top: 50%;
+    }
+    .action-buttons button i {
+        font-size: 25px; /* Ajusta o tamanho dos ícones */
+    }
+}
+
+/* Tablets (768px a 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .left-slide {
+        width: 50%; /* Slide esquerdo ocupa metade da largura em tablets */
+    }
+    .left-slide h1 {
+        font-size: 2.5rem; /* Ajusta o tamanho da fonte */
+    }
+    .slider-container .action-buttons button {
+        left: 45%;
+        top: 50%;
+    }
+}
+
+/* Desktops grandes (acima de 1024px) */
+@media (min-width: 1024px) {
+    .left-slide {
+        width: 25%; /* Slide esquerdo ocupa 25% da largura */
+    }
+    .left-slide h1 {
+        font-size: 3rem;
+    }
+    /* .slider-container .action-buttons button {
+        left: 25%;
+        top: 50%;
+    } */
+}

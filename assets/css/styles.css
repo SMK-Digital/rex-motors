@@ -1,0 +1,43 @@
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import './reset.css';
+@import './typography.css';
+@import './buttons.css';
+@import './header.css';
+@import './navbar.css';
+@import './carousel.css';
+@import './sections.css';
+@import './footer.css';
+
+:root {
+    --primary: #000000;
+    --secondary: #009d00;
+    --light: #cecece;
+    --dark: #0a3d08;
+    --middle: #232020;
+}
+
+body{
+    background-color: var(--primary);
+    font-family: 'Bahnscrift', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    color: var(--light);
+}
+
+h1 {
+    font-family: 'Autogate', Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+h2 {
+    font-family: 'Autogate', Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+h3 {
+    font-family: 'Autogate', Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+    font-weight: normal;
+}
