@@ -133,3 +133,16 @@
     background: #000000;
 
 }
+
+.btn-destaque {
+    color: #FFFFFF;
+    box-shadow: inset 0 0 5px rgba(15, 146, 26, 0.7), 0 0 10px rgba(15, 146, 26, 0.7), 0 0 30px rgba(15, 146, 26, 0.7), 0 0 4px rgba(15, 146, 26, 0.7);
+    background-color: linear-gradient(90deg, rgb(80, 152, 8) 58%, rgba(255, 255, 255, 0) 95%);
+
+}
+
+.btn-destaque:hover {
+    box-shadow: 0 0 20px rgba(252, 252, 252, 0.829);
+    background-color: var(--secondary);
+
+}
